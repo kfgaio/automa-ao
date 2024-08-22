@@ -1,0 +1,38 @@
+# Arquivos e diretórios específicos do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.egg
+*.egg-info
+dist/
+build/
+*.db
+*.sqlite3
+
+# Arquivos de configuração do ambiente virtual
+venv/
+env/
+*.env
+
+# Arquivos de configuração do IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Arquivos temporários e de sistema
+*.log
+*.tmp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Arquivos gerados pelo PyInstaller
+*.spec
+
+# Diretórios do sistema de controle de versão
+.git/
+.gitignore
