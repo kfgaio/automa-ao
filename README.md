@@ -1,44 +1,9 @@
-```python
-import pyautogui
-import time
+# Objetivo do Código
 
-pyautogui.PAUSE = 3
+Este código automatiza o processo de envio de um e-mail pelo Gmail usando a biblioteca `pyautogui` para simular interações com a interface gráfica do usuário. O script realiza as seguintes etapas:
 
-# Colocar o alerta
-pyautogui.alert('O código irá iniciar, não use o computador durante este período')
-
-# Abrir o Google
-pyautogui.press('winleft')
-pyautogui.write("google")
-pyautogui.press('enter')
-time.sleep(1)
-
-# Abrir a guia anônima
-pyautogui.hotkey("ctrl", "shift", "N")  
-time.sleep(2)
-
-# Acessar o Gmail
-pyautogui.write('https://mail.google.com/mail/u/0/?ogbl#inbox')
-pyautogui.press('enter')
-time.sleep(2)  
-
-# Fazer login
-pyautogui.write("seu gmail")
-pyautogui.press('enter')
-time.sleep(3)
-
-pyautogui.write("sua senha")
-pyautogui.press('enter')
-
-# Mover o mouse para as coordenadas (18, 182) e pressionar o botão do mouse
-pyautogui.moveTo(18, 182)
-pyautogui.click()
-time.sleep(1)
-pyautogui.moveTo(936, 313)
-pyautogui.write('gmail do destinatario')
-pyautogui.moveTo(890, 370)
-time.sleep(1)
-pyautogui.click()
-pyautogui.click()
-pyautogui.write('mensagem')
-time.sleep(1)
+1. **Exibe um alerta** para informar que o código irá iniciar e que o usuário não deve usar o computador durante o processo.
+2. **Abre o Google** no navegador padrão e inicia uma nova guia anônima.
+3. **Acessa o Gmail** através do URL fornecido.
+4. **Faz login** no Gmail com o e-mail e senha fornecidos.
+5. **Preenche e envia um e-mail** para um destinatário especificado.
